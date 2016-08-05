@@ -1,0 +1,6 @@
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\bin\Debug\Workshop.exe.config
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\bin\Debug\Workshop.exe
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\bin\Debug\Workshop.pdb
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\obj\Debug\Workshop.csprojResolveAssemblyReference.cache
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\obj\Debug\Workshop.exe
+C:\Users\lconstantin\Documents\Visual Studio 2015\Projects\Workshop\Workshop\obj\Debug\Workshop.pdb
