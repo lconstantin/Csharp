@@ -54,9 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasePage.cs" />
+    <Compile Include="CartPage.cs" />
     <Compile Include="CategoryPage.cs" />
     <Compile Include="CelTests.cs" />
     <Compile Include="HomePage.cs" />
+    <Compile Include="ProductDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DriverManagementUtils.cs" />
   </ItemGroup>

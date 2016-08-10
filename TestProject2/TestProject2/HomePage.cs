@@ -28,6 +28,11 @@ namespace TestProject2
 
         [FindsBy(How = How.ClassName, Using = "niv1")]
         private IList<IWebElement> leftMenu ;
+
+        [FindsBy(How = How.XPath, Using = "//h2/a[contains(@href,'kaspersky-internet-security-2016-3-pc-plus1-gratis-1-an')]")]
+        private IWebElement pcProduct;
+
+       
         #endregion
 
         #region Methods
@@ -66,6 +71,21 @@ namespace TestProject2
             submeniu.Click();
             return text;
         }
+
+        public ProductDetails GoToDetailsPge() {
+            pcProduct.Click();
+            
+            ProductDetails productDetails = new ProductDetails(_driver);
+
+            return productDetails;
+        }
+
+        public string ClickOnPCProduct() {
+            string getName = pcProduct.Text;
+            return getName;
+        }
+
+       
         #endregion
 
     }

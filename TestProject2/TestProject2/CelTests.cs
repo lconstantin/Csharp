@@ -37,6 +37,8 @@ namespace TestProject2
             DriverManagementUtils.NavigateToURL(driver, "http://www.cel.ro");
             Assert.IsTrue(homePage.GetPageTitle().Contains("CEL"));
 
+            driver.Manage().Window.Maximize();
+
             Assert.IsTrue(homePage.IsLogoDisplayed());
 
             homePage.ClickNotification();
@@ -50,6 +52,30 @@ namespace TestProject2
 
                 Assert.AreEqual(item, listaLabel[list.IndexOf(item)]);
             }
+            //click on desired product
+           var getName = homePage.ClickOnPCProduct();
+
+            ProductDetails productDetails = homePage.GoToDetailsPge();
+
+            //check if name of product
+            var getTitle = productDetails.CheckTitle();
+            Assert.AreEqual(getName, getTitle);
+
+            //add to cart
+            productDetails.addToCart();
+
+            //go to cart
+            CartPage cartPage =  productDetails.GoToCart();
+
+            //   Assert.IsTrue(CartPage.GetPageTitle().Contains());
+            cartPage.increaseQuantity();
+
+            //check if the price is correct
+            int singlePrice = cartPage.getSinglePrice();
+            int multiply = singlePrice * 3;
+            int totalPrice = cartPage.getTotalPrice();
+            
+            Assert.AreEqual(totalPrice, multiply);
         }
     }
 }

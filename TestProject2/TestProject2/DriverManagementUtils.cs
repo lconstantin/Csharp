@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TestProject2
 {
@@ -11,9 +12,12 @@ namespace TestProject2
     
     public class DriverManagementUtils
     {
+       
+
         public static void NavigateToURL(IWebDriver driver, string url)
         {
             driver.Navigate().GoToUrl(url);
+           
         }
 
         public static void SetWait(ref IWebDriver driver, int waitTime)
