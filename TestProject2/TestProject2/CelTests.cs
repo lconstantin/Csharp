@@ -72,10 +72,13 @@ namespace TestProject2
 
             //check if the price is correct
             int singlePrice = cartPage.getSinglePrice();
-            int multiply = singlePrice * 3;
+            int multiply = singlePrice * cartPage.getQuantity();
             int totalPrice = cartPage.getTotalPrice();
             
             Assert.AreEqual(totalPrice, multiply);
+
+            //apare continut cos
+            Assert.IsTrue(cartPage.GetPageTitle().Contains("Continut cos"));
         }
     }
 }
