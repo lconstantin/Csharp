@@ -17,4 +17,4 @@ namespace TestProject2.TestDeserial
         public List<Parameter> Parameters { get; set; }
     }
 }
-}
+

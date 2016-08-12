@@ -9,10 +9,9 @@ namespace TestProject2.TestDeserial
 {
     [Serializable()]
     [XmlRoot("Testxml")]
-    class Testxml
-    
+    class Testxml   
     {
-        XmlElement("TestSet")]
+        [XmlElement("TestSet")]
         public List<TestSet> Tests { get; set; }
     }
 }
